@@ -5,12 +5,12 @@
 <body>
   <h1>Bob's Auto Parts</h1>
   <h2>Order Results</h2>
+  <p>
   <?php
 
-  echo "<p>Order processed at ";
-  echo date('H:i, jS F Y');
-  echo "</p>";
+  echo "Order processed at " . date('H:i:s, jS F Y');
 
   ?>
+  </p>
 </body>
 </html>
