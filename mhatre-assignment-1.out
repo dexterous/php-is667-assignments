@@ -1,0 +1,36 @@
++-----------------+--------------+
+| name            | city         |
++-----------------+--------------+
+| Henry Winkler   | NYC          |
+| Saager Mhatre   | Brooklyn     |
+| Julie Smith     | Airport West |
+| Alan Wong       | Box Hill     |
+| Michelle Arthur | Yarraville   |
++-----------------+--------------+
+5 rows in set (0.00 sec)
+
++---------------+----------------+------------------------------------+-------+
+| isbn          | author         | title                              | price |
++---------------+----------------+------------------------------------+-------+
+| 0-672-31509-2 | Pruitt, et al. | Teach Yourself GIMP in 24 Hours    | 24.99 |
+| 0-672-31697-8 | Michael Morgan | Java 2 for Professional Developers | 34.99 |
+| 0-672-31745-1 | Thomas Down    | Installing Debian GNU/Linux        | 24.99 |
++---------------+----------------+------------------------------------+-------+
+3 rows in set (0.00 sec)
+
++---------------+---------------+
+| name          | avg(o.amount) |
++---------------+---------------+
+| Saager Mhatre |     74.980003 |
+| Julie Smith   |     54.985003 |
++---------------+---------------+
+2 rows in set (0.00 sec)
+
++---------------+
+| name          |
++---------------+
+| Henry Winkler |
+| Saager Mhatre |
++---------------+
+2 rows in set (0.00 sec)
+
