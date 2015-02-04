@@ -1,4 +1,6 @@
 insert into customers values
+  (1, "Henry Winkler","One Pace Plaza","NYC"),
+  (2, "Saager Mhatre", "55 Clark St", "Brooklyn"),
   (3, "Julie Smith", "25 Oak Street", "Airport West"),
   (4, "Alan Wong", "1/47 Haines Avenue", "Box Hill"),
   (5, "Michelle Arthur", "357 North Road", "Yarraville");
