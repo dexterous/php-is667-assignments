@@ -9,7 +9,7 @@ insert into orders values
   (NULL, 3, 69.98, "2007-04-02"),
   (NULL, 1, 49.99, "2007-04-15"),
   (NULL, 2, 74.98, "2007-04-19"),
-  (NULL, 3, 24.99, "2007-05-01");
+  (NULL, 3, 39.99, "2007-05-01");
 
 insert into books values
   ("0-672-31697-8", "Michael Morgan", "Java 2 for Professional Developers", 34.99),
