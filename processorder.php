@@ -6,11 +6,7 @@
   <h1>Bob's Auto Parts</h1>
   <h2>Order Results</h2>
   <p>
-  <?php
-
-  echo "Order processed at " . date('H:i:s, jS F Y');
-
-  ?>
+  <?= "Order processed at " . date('H:i:s, jS F Y'); ?>
   </p>
 </body>
 </html>
