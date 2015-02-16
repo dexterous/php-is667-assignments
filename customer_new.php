@@ -18,7 +18,7 @@
 
   $db = new mysqli('localhost', 'librarian', 'readmorebooks', 'bookorama');
 
-  if (mysqli_connect_errno()) {
+  if ($db->connect_errno) {
      echo "Error: Could not connect to database.  Please try again later.";
      exit;
   }
