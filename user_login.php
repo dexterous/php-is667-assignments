@@ -61,6 +61,6 @@ if (isset($_POST['userid']) && isset($_POST['password']))
   }
 ?>
   <br />
-  <a href="user_authorized.php">Members section</a>
+  <a href="user_profile.php">Members section</a>
 </body>
 </html>
