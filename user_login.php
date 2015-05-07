@@ -7,7 +7,8 @@ if (isset($_POST['userid']) && isset($_POST['password']))
   $userid = $_POST['userid'];
   $password = $_POST['password'];
 
-  $db = new mysqli('localhost', 'auth_admin', 'rootakses', 'auth');
+  require 'database.php';
+  @ $db = db_connect($db_url['auth']);
 
   if ($db->connect_errno) {
     echo 'Connection to database failed:'.mysqli_connect_error();

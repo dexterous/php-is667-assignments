@@ -14,7 +14,9 @@
   <p>You are logged in as <?= $user_name ?></p>
 <?php
     $image_dir = "./images";
-    @ $db = new mysqli('localhost', 'auth_admin', 'rootakses', 'auth');
+
+    require 'database.php';
+    @ $db = db_connect($db_url['auth']);
 
     if ($db->connect_errno) {
       echo 'Connection to database failed:'.$db->connect_error;

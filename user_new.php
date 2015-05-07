@@ -20,14 +20,15 @@
     $password = addslashes($password);
   }
 
-  @ $db = new mysqli('localhost', 'auth_admin', 'rootakses', 'auth');
+  require 'database.php';
+  @ $db = db_connect($db_url['auth']);
 
   if ($db->connect_errno) {
     echo "Error: Could not connect to database.  Please try again later.";
     exit;
   }
 
-  $query = "insert into authorized_users values ('".$name."', sha1('".$password."'))";
+  $query = "insert into authorized_users(name, password) values ('".$name."', sha1('".$password."'))";
 
   $result = $db->query($query);
 

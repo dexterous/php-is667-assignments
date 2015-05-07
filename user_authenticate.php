@@ -19,7 +19,8 @@
   }
 
   // connect to mysql
-  @ $db = new mysqli('localhost', 'auth_admin', 'rootakses', 'auth');
+  require 'database.php';
+  @ $db = db_connect($db_url['auth']);
 
   if($db->connect_errno) {
     echo "Cannot connect to database.";

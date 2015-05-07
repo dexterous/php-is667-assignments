@@ -15,7 +15,7 @@ if (isset($_ENV['CLEARDB_DATABASE_URL'])) {
 }
 
 function db_connect($url) {
-  $url = parse_url();
+  $url = parse_url($url);
 
   $server = $url["host"];
   $username = $url["user"];
